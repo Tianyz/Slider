@@ -1,3 +1,5 @@
+require('../css/slider.css');
+
 /**
  * jQuery plugin banner slider
  *
