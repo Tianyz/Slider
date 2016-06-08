@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+#sliderList{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.sliderItem,.sliderItem a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.sliderItem a{
+    display: none;
+}
+
+.sliderItem a:first-child{
+    display: block;
+}
+
+body{
+    text-align: center;
+}
+
+#slider_control_wrap{
+    position: absolute;
+    z-index: 5;
+    bottom: 5px;
+    left: 50%;
+}
+
+.control_button{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.control_button.active{
+    background: none;
+    border: 2px solid #fff;
+}
