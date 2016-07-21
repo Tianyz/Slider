@@ -1,8 +1,6 @@
-var fileName = 'jquery.slider' + '.js';
+var webpack = require('webpack');
 
-console.log('\n');
-console.log(__dirname + '/dist/js/' + fileName + '.js');
-console.log('\n');
+var fileName = 'jquery.slider.js';
 
 module.exports = {
     entry: './src/js/' + fileName,
@@ -14,5 +12,12 @@ module.exports = {
         loaders: [
             { test: /\.css$/, loader: "style!css" }
         ]
-    }
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            }
+        })
+    ]
 };
