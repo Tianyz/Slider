@@ -7,7 +7,8 @@ module.exports = {
     },
     output: {
         path: __dirname + '/dist/js/',
-        filename: '[name].js'
+        filename: '[name].js',
+        publicPath: '/'
     },
     module: {
         loaders: [

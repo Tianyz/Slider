@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "Banner 轮播 JQuery插件；\r 支持响应式；\r 插件由 webpack 打包；\r 使用 gulp 处理工作流。",
   "main": "gulpfile.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "css-loader": "^0.23.1",
     "gulp": "^3.9.1",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.1"
+    "webpack": "^1.13.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
