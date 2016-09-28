@@ -1,12 +1,13 @@
 var webpack = require('webpack');
 
-var fileName = 'jquery.slider.js';
-
 module.exports = {
-    entry: './src/js/' + fileName,
+    entry: {
+        'jquery.slider': './src/js/jquery.slider.js',
+        'index': './src/js/index.js'
+    },
     output: {
         path: __dirname + '/dist/js/',
-        filename: fileName
+        filename: '[name].js'
     },
     module: {
         loaders: [
