@@ -1,3 +1,5 @@
+var $ = require('jquery');
+
 $(function() {
     var $slider_wrap = $('#sliderWrap'),
         $slider = $('#sliderList'),

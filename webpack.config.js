@@ -10,6 +10,9 @@ module.exports = {
         filename: '[name].js',
         publicPath: '/'
     },
+    externals: {
+        jquery: 'jQuery'
+    },
     module: {
         loaders: [
             { test: /\.css$/, loader: "style!css" }
